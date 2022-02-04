@@ -5,13 +5,75 @@
     <title>Cagri Tanriover Home Page</title>
 <style>
 body {background-color: powderblue;}
-p    {color: red;}
 
-img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 10%;
+	/* IMAGE STYLING CLASS */
+	.imgPortrait1 {
+		display: inline-block;
+		float: left; /* Test will be to the right of this image. */
+ 		padding:3px; /* Space between the image and the border. */
+		border:5px solid silver;  /* Attributes of the border within which the image will be enclosed. */
+		margin-left: 20px;  /* Image will be aligned to the left of page with 20pc clearance. */
+		margin-right: auto; /* Since image is aligned to the left, right margin will be adjusted accordingly. */
+		width: 15%; /* Image will be scaled by this amount. */
+	}
+
+	/* CENTER BLUE TEXT CLASS */
+	.textStyle1 {
+		color:blue;
+		text-align:center;
+		font-size:36px;
+	}
+
+	.textStyle2 {
+		color:red;
+		text-align:center;
+		font-size:40px;
+	}
+	
+	.bodyParaText {
+		color:black;
+		font-size: 16px;
+		font-family:arial;
+		font-style: italic;
+		font-weight: 100;
+	}
+	
+	.bodyHeadingText {
+		padding:10px;
+		color:black;
+		font-size: 18px;
+		font-family:arial;
+		font-weight: 800;
+	}
+
+	/* TABLE CLASS favoritesTable DEFINITIONS FOLLOW */
+
+		/* Define general table settings for class favoritesTable */
+		.favoritesTable {
+			width: 50%;
+			margin-left: auto;
+			margin-right: 50px;
+		}
+
+		/* Define the default for all the table data for class favoritesTable */
+		.favoritesTable td{
+			margin-right: auto;
+			margin-left: auto;
+			padding: 60px;
+			text-align: center;
+			vertical-align: middle;
+			color:blue;
+			font-size: 24px;
+			font-family:Luminari;
+			font-weight: 900;
+			font-style: italic;
+		}
+		
+		/* Define the hover highlight color for the table data class favoritesTable */
+		.favoritesTable td:hover{
+			background-color: #DC143C;
+			color: #F0FFFF;
+		}
 }
 
 </style>
@@ -23,13 +85,44 @@ img {
 
 <body>
 
+	<!-- FOLLOWING IS THE WELCOME SECTION -->
     <div class="part_1">
-        <h1 style="color:blue;text-align:center;">~~~ Welcome to Cagri's Webpage ~~~</h1>
-		<img src="images/cagri_photo.jfif" alt="Cagri_Portrait">
+        <h1 class="textStyle1">~~~ Welcome to Cagri's Homepage ~~~</h1>
+		<p class="bodyParaText">
+			<img class="imgPortrait1" src="images/cagri_photo.jfif" alt="Cagri_Portrait">
+			<span class="bodyHeadingText">Brief Info:</span> This is the part where brief profile
+			information for Cagri will be placed. It will also mention the motivation for preparing
+			a homepage as this one.
+		</p>
     </div>
 	
+	<!-- FOLLOWING IS FOR TEMPORARY BROADCAST MESSAGE -->
 	<div class="part_2">
-		<p style="color:red;text-align:center;font-size:50px;">THIS PAGE IS CURRENTLY UNDER CONSTRUCTION</p>
+		<p class="textStyle2">THIS PAGE IS CURRENTLY UNDER CONSTRUCTION</p>
+	</div>
+	
+	<!-- FOLLOWING IS THE TABLE STRUCTURE FOR THE FAVORITES SECTION -->
+	<div class="part_3">
+		<table class="favoritesTable">
+		  <tr>
+			<td>FAVORITE BOOKS</td>
+			<td>FAVORITE SAYINGS</td>
+			<td>FAVORITE BANDS</td>
+			<td>FAVORITE FOOD</td>
+		  </tr>
+		  <tr>
+			<td>FAVORITE DRINKS</td>
+			<td>FAVORITE JOKES</td>
+			<td>FAVORITE ACTORS</td>
+			<td>FAVORITE PRODUCTS</td>
+		  </tr>
+		  <tr>
+			<td>FAVORITE MOVIES</td>
+			<td>FAVORITE ANIMALS</td>
+			<td></td>
+			<td></td>
+		  </tr>
+		</table>
 	</div>
 	
 	<!--
