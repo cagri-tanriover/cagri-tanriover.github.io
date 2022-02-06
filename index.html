@@ -7,46 +7,104 @@
 body {background-color: powderblue;}
 
 	/* IMAGE STYLING CLASS */
-	.imgPortrait1 {
-		display: inline-block;
-		float: left; /* Test will be to the right of this image. */
- 		padding:3px; /* Space between the image and the border. */
-		border:5px solid silver;  /* Attributes of the border within which the image will be enclosed. */
-		margin-left: 20px;  /* Image will be aligned to the left of page with 20pc clearance. */
-		margin-right: auto; /* Since image is aligned to the left, right margin will be adjusted accordingly. */
-		width: 15%; /* Image will be scaled by this amount. */
-	}
+		.imgPortrait1 {
+			display: inline-block;
+			padding:3px; /* Space between the image and the border. */
+			border:5px solid silver;  /* Attributes of the border within which the image will be enclosed. */
+			margin-left: 20px;  /* Image will be aligned to the left of page with 20pc clearance. */
+			margin-right: auto; /* Since image is aligned to the left, right margin will be adjusted accordingly. */
+			width: 70%; /* Image will be scaled by this amount. */
+		}
 
-	/* CENTER BLUE TEXT CLASS */
-	.textStyle1 {
-		color:blue;
-		text-align:center;
-		font-size:36px;
-	}
+		.cellBackground {
+			background-image: url(images/tag_background.png);
+			background-repeat: no-repeat;
+			background-size: 100% 100%;
+			background-position: left center;
+			color: #F0FFFF;
+		}
 
-	.textStyle2 {
-		color:red;
-		text-align:center;
-		font-size:40px;
-	}
-	
-	.bodyParaText {
-		color:black;
-		font-size: 16px;
-		font-family:arial;
-		font-style: italic;
-		font-weight: 100;
-	}
-	
-	.bodyHeadingText {
-		padding:10px;
-		color:black;
-		font-size: 18px;
-		font-family:arial;
-		font-weight: 800;
-	}
+	/* VARIOUS TEXT CLASS DEFINITIONS FOLLOW */
+		.textStyle1 {
+			color:blue;
+			text-align:center;
+			font-size:36px;
+		}
 
-	/* TABLE CLASS favoritesTable DEFINITIONS FOLLOW */
+		.textStyle2 {
+			color:red;
+			text-align:center;
+			font-size:40px;
+		}
+
+		.cellTagText {
+			color:white;
+			text-align:left;
+			font-size:24px;
+			font-family:arial;
+			font-style: italic;
+			font-weight: 100;
+		}
+		
+		.bodyParaText {
+			color:black;
+			font-size: 16px;
+			font-family:arial;
+			font-style: italic;
+			font-weight: 100;
+		}
+		
+		.bodyHeadingText {
+			color:black;
+			font-size: 18px;
+			font-family:arial;
+			font-weight: 800;
+		}
+
+	/* TABLE CLASS DEFINITIONS FOLLOW */
+
+		/* topTable DEFINITIONS FOLLOW */
+		/* Define general table settings for class topTable */
+		.topTable {
+			width: 100%;
+			margin-left: 5px;
+			margin-right: auto;
+		}
+
+		.topTable td{
+			margin-right: auto;
+			margin-left: auto;
+			text-align: left;
+			vertical-align: top;
+		}
+
+		/* masterTable DEFINITIONS FOLLOW */
+		
+		.masterTable td{
+			/*border: 1px solid blue;*/
+			margin-right: auto;
+			margin-left: auto;
+			text-align: left;
+			vertical-align: top;
+		}
+		
+		/* tagsTable DEFINITIONS FOLLOW */
+		.tagsTable td{
+			padding: 10px;
+			width: 1250px;
+			height: 50px;
+			/*border: 1px solid red;*/
+			margin-right: auto;
+			margin-left: auto;
+			text-align: center;
+			vertical-align: middle;
+		}
+		
+		.tagsTable td:hover{
+			background-image: url(images/tag_background_negative.png);
+		}
+
+		/* favoritesTable DEFINITIONS FOLLOW */
 
 		/* Define general table settings for class favoritesTable */
 		.favoritesTable {
@@ -59,7 +117,7 @@ body {background-color: powderblue;}
 		.favoritesTable td{
 			margin-right: auto;
 			margin-left: auto;
-			padding: 60px;
+			padding: 40px;
 			text-align: center;
 			vertical-align: middle;
 			color:blue;
@@ -74,8 +132,8 @@ body {background-color: powderblue;}
 			background-color: #DC143C;
 			color: #F0FFFF;
 		}
-}
 
+		
 </style>
 
 
@@ -88,12 +146,22 @@ body {background-color: powderblue;}
 	<!-- FOLLOWING IS THE WELCOME SECTION -->
     <div class="part_1">
         <h1 class="textStyle1">~~~ Welcome to Cagri's Homepage ~~~</h1>
-		<p class="bodyParaText">
-			<img class="imgPortrait1" src="images/cagri_photo.jfif" alt="Cagri_Portrait">
-			<span class="bodyHeadingText">Brief Info:</span> This is the part where brief profile
-			information for Cagri will be placed. It will also mention the motivation for preparing
-			a homepage as this one.
-		</p>
+		
+		<table class="topTable">
+			<tr>
+				<td>
+					<img class="imgPortrait1" src="images/cagri_photo.jfif" alt="Cagri_Portrait">
+				</td>
+				<td>
+					<p class="bodyParaText">
+						<span class="bodyHeadingText">Brief Info:</span> This is the part where brief profile
+						information for Cagri will be placed. It will also mention the motivation for preparing
+						a homepage as this one.
+					</p>
+				</td>
+			</tr>
+		</table>
+
     </div>
 	
 	<!-- FOLLOWING IS FOR TEMPORARY BROADCAST MESSAGE -->
@@ -103,25 +171,41 @@ body {background-color: powderblue;}
 	
 	<!-- FOLLOWING IS THE TABLE STRUCTURE FOR THE FAVORITES SECTION -->
 	<div class="part_3">
-		<table class="favoritesTable">
-		  <tr>
-			<td>FAVORITE BOOKS</td>
-			<td>FAVORITE SAYINGS</td>
-			<td>FAVORITE BANDS</td>
-			<td>FAVORITE FOOD</td>
-		  </tr>
-		  <tr>
-			<td>FAVORITE DRINKS</td>
-			<td>FAVORITE JOKES</td>
-			<td>FAVORITE ACTORS</td>
-			<td>FAVORITE PRODUCTS</td>
-		  </tr>
-		  <tr>
-			<td>FAVORITE MOVIES</td>
-			<td>FAVORITE ANIMALS</td>
-			<td></td>
-			<td></td>
-		  </tr>
+	
+		<table class="masterTable">
+			<tr>
+				<td>
+					<table class="tagsTable">
+						<tr><td class="cellBackground"><p class="cellTagText">BIOGRAPHY</p></td></tr>
+						<tr><td class="cellBackground"><p class="cellTagText">RESUME</p></td></tr>
+						<tr><td class="cellBackground"><p class="cellTagText">PUBLICATIONS</p></td></tr>
+						<tr><td class="cellBackground"><p class="cellTagText">PATENTS</p></td></tr>
+						<tr><td class="cellBackground"><p class="cellTagText">STUFF I WROTE</p></td></tr>
+					</table>
+				</td>
+				<td>
+					<table class="favoritesTable">
+					  <tr>
+						<td>FAVORITE BOOKS</td>
+						<td>FAVORITE SAYINGS</td>
+						<td>FAVORITE BANDS</td>
+						<td>FAVORITE FOOD</td>
+					  </tr>
+					  <tr>
+						<td>FAVORITE DRINKS</td>
+						<td>FAVORITE JOKES</td>
+						<td>FAVORITE ACTORS</td>
+						<td>FAVORITE PRODUCTS</td>
+					  </tr>
+					  <tr>
+						<td>FAVORITE MOVIES</td>
+						<td>FAVORITE ANIMALS</td>
+						<td></td>
+						<td></td>
+					  </tr>
+					</table>
+				</td>
+			</tr>
 		</table>
 	</div>
 	
