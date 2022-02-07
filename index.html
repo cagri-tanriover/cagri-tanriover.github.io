@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+	<!-- Following meta allows rescaling based on client device -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8">  
     <title>Cagri Tanriover Home Page</title>
 <style>
 body {background-color: powderblue;}
@@ -21,8 +22,17 @@ body {background-color: powderblue;}
 			background-repeat: no-repeat;
 			background-size: 100% 100%;
 			background-position: left center;
-			color: #F0FFFF;
+			color: white;	
 		}
+
+	/* HYPERLINK CLASS DEFINITIONS. */
+	.hypLnk a {font-family:Georgia,serif; font-size: 24px; display: block; text-align: left;text-decoration:none;}
+	.hypLnk a:any-link {color: white;}
+	.hypLnk a:hover {font-weight:bold;}
+
+	.hypLnkFaves a {font-family:Georgia,serif; font-size: 24px; display: block; text-align: left;text-decoration:none;}
+	.hypLnkFaves a:any-link {color: blue;}
+	.hypLnkFaves a:hover {font-style: italic; color: red;}
 
 	/* VARIOUS TEXT CLASS DEFINITIONS FOLLOW */
 		.textStyle1 {
@@ -101,7 +111,8 @@ body {background-color: powderblue;}
 		}
 		
 		.tagsTable td:hover{
-			background-image: url(images/tag_background_negative.png);
+			/* background-image: url(images/tag_background_negative.png); */
+			background-image: url(images/ct_thats_it_wtrmrk.gif);
 		}
 
 		/* favoritesTable DEFINITIONS FOLLOW */
@@ -124,16 +135,14 @@ body {background-color: powderblue;}
 			font-size: 24px;
 			font-family:Luminari;
 			font-weight: 900;
-			font-style: italic;
 		}
 		
 		/* Define the hover highlight color for the table data class favoritesTable */
 		.favoritesTable td:hover{
-			background-color: #DC143C;
-			color: #F0FFFF;
+			/* background-color: #DC143C; */
+			color: red;
 		}
 
-		
 </style>
 
 
@@ -176,30 +185,30 @@ body {background-color: powderblue;}
 			<tr>
 				<td>
 					<table class="tagsTable">
-						<tr><td class="cellBackground"><p class="cellTagText">BIOGRAPHY</p></td></tr>
-						<tr><td class="cellBackground"><p class="cellTagText">RESUME</p></td></tr>
-						<tr><td class="cellBackground"><p class="cellTagText">PUBLICATIONS</p></td></tr>
-						<tr><td class="cellBackground"><p class="cellTagText">PATENTS</p></td></tr>
-						<tr><td class="cellBackground"><p class="cellTagText">STUFF I WROTE</p></td></tr>
+						<tr><td class="cellBackground"><p class="hypLnk"><a href="https://www.google.com">BIOGRAPHY</a></p></td></tr>
+						<tr><td class="cellBackground"><p class="hypLnk"><a href="https://www.google.com">RESUME</a></p></td></tr>
+						<tr><td class="cellBackground"><p class="hypLnk"><a href="https://www.google.com">PUBLICATIONS</a></p></td></tr>
+						<tr><td class="cellBackground"><p class="hypLnk"><a href="https://www.google.com">PATENTS</a></p></td></tr>
+						<tr><td class="cellBackground"><p class="hypLnk"><a href="https://www.google.com">STUFF I WROTE</a></p></td></tr>
 					</table>
 				</td>
 				<td>
 					<table class="favoritesTable">
 					  <tr>
-						<td>FAVORITE BOOKS</td>
-						<td>FAVORITE SAYINGS</td>
-						<td>FAVORITE BANDS</td>
-						<td>FAVORITE FOOD</td>
+						<td class="hypLnkFaves"><a href="https://www.bbc.co.uk">FAVORITE BOOKS</a></td>
+						<td class="hypLnkFaves"><a href="https://www.bbc.co.uk">FAVORITE SAYINGS</a></td>
+						<td class="hypLnkFaves"><a href="https://www.bbc.co.uk">FAVORITE BANDS</a></td>
+						<td class="hypLnkFaves"><a href="https://www.bbc.co.uk">FAVORITE FOOD</a></td>
 					  </tr>
 					  <tr>
-						<td>FAVORITE DRINKS</td>
-						<td>FAVORITE JOKES</td>
-						<td>FAVORITE ACTORS</td>
-						<td>FAVORITE PRODUCTS</td>
+						<td class="hypLnkFaves"><a href="https://www.bbc.co.uk">FAVORITE DRINKS</a></td>
+						<td class="hypLnkFaves"><a href="https://www.bbc.co.uk">FAVORITE JOKES</a></td>
+						<td class="hypLnkFaves"><a href="https://www.bbc.co.uk">FAVORITE ACTORS</a></td>
+						<td class="hypLnkFaves"><a href="https://www.bbc.co.uk">FAVORITE PRODUCTS</a></td>
 					  </tr>
 					  <tr>
-						<td>FAVORITE MOVIES</td>
-						<td>FAVORITE ANIMALS</td>
+						<td class="hypLnkFaves"><a href="https://www.bbc.co.uk">FAVORITE MOVIES</a></td>
+						<td class="hypLnkFaves"><a href="https://www.bbc.co.uk">FAVORITE ANIMALS</a></td>
 						<td></td>
 						<td></td>
 					  </tr>
