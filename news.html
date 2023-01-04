@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Following meta allows rescaling based on client device -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8">
+	<!-- Following is for using Google material icons on the web page -->
+	<!-- see this link for a full list of icons: https://fonts.google.com/icons?selected=Material+Icons -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <title>Cagri - News Archive</title>
+<style>
+body {background-color: powderblue;}
+
+	div.Title_section {
+	line-height: 50%; /* Line spacing for <div> element Title_section */
+	}
+
+	.hypLnkNews a {font-family:Georgia,serif; font-size: 24px; display: block; text-align: left;text-decoration:none;}
+	.hypLnkNews a:any-link {color: blue;}
+	.hypLnkNews a:hover {font-style: italic; color: red;}
+
+	/* VARIOUS TEXT CLASS DEFINITIONS FOLLOW */
+		.textStyle1 {
+			color:blue;
+			text-align:center;
+			font-size:24px;
+		}
+
+		.bodyParaText {
+			color:black;
+			text-align:center;
+			font-size: 18px;
+			font-family:garamond;
+			font-weight: 500;
+		}
+
+		/* Define the default for all the table data for class favoritesTable */
+		.newsArchiveTable td{
+			margin-right: auto;
+			margin-left: auto;
+			padding: 10px;
+			text-align: center;
+			vertical-align: middle;
+			color:blue;
+			font-size: 24px;
+			font-family:Luminari;
+			font-weight: 500;
+		}
+
+		/* Define the hover highlight color for the table data class favoritesTable */
+		.newsArchiveTable td:hover{
+			/* background-color: #DC143C; */
+			color: red;
+		}
+
+</style>
+
+
+</head>
+
+<body>
+
+	<!-- FOLLOWING IS THE WELCOME SECTION -->
+    <div class="Title_section">
+        <h1 class="textStyle1">~~~ Cagri Tanriover - News Archive ~~~
+		<p style="text-align:center;font-size: 18px;"><i>(last updated on 4 January 2023)</i></p>
+		</h1><br><br>
+    </div>
+	
+   <div class="Intro_section">
+		<p class="bodyParaText">
+		Following are links to noteworthy news articles related to past projects of mine. Some links
+		will take you to scanned images of newspaper articles, which are not publicly available on the internet.
+		</p><br>
+    </div>
+
+	<!-- FOLLOWING IS THE TABLE STRUCTURE FOR THE FAVORITES SECTION -->
+	<div class="news_matrix">
+
+		<table class="newsArchiveTable">
+		  <tr> <!-- First row in table -->
+			  <!-- Each <td></td> pair defines a column in table -->
+			  <td class="hypLnkNews"><a href=images/DailyExpress_17Jan02.jpg><b>1 - Telemedicine project - "Inventors transmit vision to save lives"</b> - <i>Daily Express, Jan 2002</i></a></td>
+		  </tr>
+		  <tr> <!-- Second row in table -->
+			  <!-- Each <td></td> pair defines a column in table -->
+			  <td class="hypLnkNews"><a href=images/TheCitizen_12Dec02.jpg><b>2 - Telemedicine project - "What a relief..."</b> - <i>The Citizen, Dec 2002</i></a></td>
+		  </tr> <!-- Add more rows to table as needed -->
+
+			<tr> <!-- Third row in table -->
+			  <!-- Each <td></td> pair defines a column in table -->
+			  <td class="hypLnkNews"><a href=https://www.theregister.com/2015/03/11/wearable_tech_show_2015_intel_gets_butterflies/><b>3 - Smart Medical Cast project with Intel Edison, 2015</b></a></td>
+		  </tr> <!-- Add more rows to table as needed -->
+
+			<tr> <!-- Fourth row in table -->
+			  <!-- Each <td></td> pair defines a column in table -->
+			  <td class="hypLnkNews"><a href=https://vimeo.com/178521026><b>4 - Butterfly Dress </b>- <i>with Cagri's technical narrative, 2016</i></a></td>
+		  </tr> <!-- Add more rows to table as needed -->
+
+			<tr> <!-- Fourth row in table -->
+			  <!-- Each <td></td> pair defines a column in table -->
+			  <td class="hypLnkNews"><a href=https://www.telecomtv.com/content/iot/intel-labs-turkey-cagri-tanriover-intel-13738/><b>5 - Butterfly Dress</b> - <i>Telecom TV, 2016</i></a></td>
+		  </tr> <!-- Add more rows to table as needed -->
+		</table>
+	</div>
+
+
+</body>
+
+</html>
