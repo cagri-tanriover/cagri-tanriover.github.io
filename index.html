@@ -20,22 +20,27 @@ body {background-color: powderblue;}
 			width: 70%; /* Image will be scaled by this amount. */
 		}
 
+		/* FOLLOWING STYLE NOT IN USE AT THE MOMENT
 		.cellBackground {
-			background-image: url(images/tag_carpet_background.png);
+			/* background-image: url(images/tag_carpet_background.png); */
 			background-repeat: no-repeat;
-			background-size: 100% 100%;
+			background-size: 100%;
 			background-position: left center;
-			color: white;	
+			color: blue;
 		}
+		*/
 
 	/* HYPERLINK CLASS DEFINITIONS. */
 	.hypLnk a {font-family:Georgia,serif; font-size: 24px; display: block; text-align: left;text-decoration:none;}
-	.hypLnk a:any-link {color: white;}
-	.hypLnk a:hover {font-weight:bold;}
+	.hypLnk a:any-link {color: blue;font-size: 24px;}
+	.hypLnk a:hover {font-weight:bold;color: purple;font-size: 24px;}
 
+	/* FAVORITE QUOTES ALSO USE THE hypLnk CLASS FOR CONSISTENCY */
+	/*
 	.hypLnkFaves a {font-family:Georgia,serif; font-size: 24px; display: block; text-align: left;text-decoration:none;}
 	.hypLnkFaves a:any-link {color: blue;}
 	.hypLnkFaves a:hover {font-style: italic; color: red;}
+	*/
 
 	/* VARIOUS TEXT CLASS DEFINITIONS FOLLOW */
 		.textStyle1 {
@@ -50,15 +55,17 @@ body {background-color: powderblue;}
 			font-size:40px;
 		}
 
+		/*
 		.cellTagText {
-			color:white;
+			color:blue;
 			text-align:left;
 			font-size:24px;
 			font-family:arial;
 			font-style: italic;
 			font-weight: 100;
 		}
-		
+		*/
+
 		.bodyParaText {
 			color:black;
 			font-size: 16px;
@@ -91,6 +98,8 @@ body {background-color: powderblue;}
 			vertical-align: top;
 		}
 
+		/* WITH THE REMOVAL OF FAVORITE QUOTES FROM A SEPARATE TABLE, MASTER TABLE IS NOT NEEDED ANYMORE
+
 		/* masterTable DEFINITIONS FOLLOW */
 		
 		.masterTable td{
@@ -100,23 +109,29 @@ body {background-color: powderblue;}
 			text-align: left;
 			vertical-align: top;
 		}
-		
+
+		*/
+
 		/* tagsTable DEFINITIONS FOLLOW */
 		.tagsTable td{
-			padding: 10px;
-			width: 1250px;
-			height: 50px;
-			/*border: 1px solid red;*/
+			/* padding: 50px; */
+			/* width: 100px; */
+			/* height: 100px; */
+			/* border: 1px solid red; */
 			margin-right: auto;
 			margin-left: auto;
 			text-align: center;
 			vertical-align: middle;
 		}
-		
+
+		/* FEATURE DEACTIVATED AT THE MOMENT
 		.tagsTable td:hover{
 			/* background-image: url(images/tag_background_negative.png); */
 			background-image: url(images/ct_thats_it_wtrmrk.gif);
 		}
+		*/
+
+		/* FAVORITE QUOTES NOT DEFINED IN A SEPARATE TABLE ANYMORE
 
 		/* favoritesTable DEFINITIONS FOLLOW */
 
@@ -145,6 +160,8 @@ body {background-color: powderblue;}
 			/* background-color: #DC143C; */
 			color: red;
 		}
+
+		*/
 
 </style>
 
@@ -199,45 +216,12 @@ body {background-color: powderblue;}
 	
 	<!-- FOLLOWING IS THE TABLE STRUCTURE FOR THE FAVORITES SECTION -->
 	<div class="part_3">
-	
-		<table class="masterTable">
-			<tr>
-				<td>
-					<table class="tagsTable">
-						<tr><td class="cellBackground"><p class="hypLnk"><a href=resume.html>RESUME</a></p></td></tr>
-						<tr><td class="cellBackground"><p class="hypLnk"><a href=patents.html>PATENTS</a></p></td></tr>
-						<tr><td class="cellBackground"><p class="hypLnk"><a href=news.html>NEWS</a></p></td></tr>
-
-						<!--
-						<tr><td class="cellBackground"><p class="hypLnk"><a href="https://www.google.com">coming soon</a></p></td></tr>
-						<tr><td class="cellBackground"><p class="hypLnk"><a href="https://www.google.com">coming soon</a></p></td></tr>
-						<tr><td class="cellBackground"><p class="hypLnk"><a href="https://www.google.com">coming soon</a></p></td></tr>
-						-->
-					</table>
-				</td>
-				<td>
-					<table class="favoritesTable">
-					  <tr>
-						<td class="hypLnkFaves"><a href=favorite_quotes.html>FAVORITE QUOTES</a></td>
-						<td class="hypLnkFaves"><a href="https://www.bbc.co.uk"></a></td>
-						<td class="hypLnkFaves"><a href="https://www.bbc.co.uk"></a></td>
-						<td class="hypLnkFaves"><a href="https://www.bbc.co.uk"></a></td>
-					  </tr>
-					  <tr>
-						<td class="hypLnkFaves"><a href="https://www.bbc.co.uk"></a></td>
-						<td class="hypLnkFaves"><a href="https://www.bbc.co.uk"></a></td>
-						<td class="hypLnkFaves"><a href="https://www.bbc.co.uk"></a></td>
-						<td class="hypLnkFaves"><a href="https://www.bbc.co.uk"></a></td>
-					  </tr>
-					  <tr>
-						<td class="hypLnkFaves"><a href="https://www.bbc.co.uk"></a></td>
-						<td class="hypLnkFaves"><a href="https://www.bbc.co.uk"></a></td>
-						<td></td>
-						<td></td>
-					  </tr>
-					</table>
-				</td>
-			</tr>
+		<table class="tagsTable">
+			<!--<tr><td class="cellBackground"><p class="hypLnk"><a href=resume.html>RESUME</a></p></td></tr>-->
+			<tr><td><p class="hypLnk"><a href=resume.html>RESUME</a></p></td></tr>
+			<tr><td><p class="hypLnk"><a href=patents.html>PATENTS</a></p></td></tr>
+			<tr><td><p class="hypLnk"><a href=news.html>NEWS</a></p></td></tr>
+			<tr><td><p class="hypLnk"><a href=favorite_quotes.html>FAVORITE QUOTES</a></p></td></tr>
 		</table>
 	</div>
 	
