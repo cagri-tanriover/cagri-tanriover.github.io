@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Following meta allows rescaling based on client device -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8">
+	<!-- Following is for using Google material icons on the web page -->
+	<!-- see this link for a full list of icons: https://fonts.google.com/icons?selected=Material+Icons -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <title>Cagri - News Archive</title>
+<style>
+body {background-color: powderblue;}
+
+	div.Title_section {
+	line-height: 50%; /* Line spacing for <div> element Title_section */
+	}
+
+	.hypLnkNews a {font-family:Georgia,serif; font-size: 24px; display: block; text-align: left;text-decoration:none;}
+	.hypLnkNews a:any-link {color: blue;}
+	.hypLnkNews a:hover {font-style: italic; color: red;}
+
+	/* VARIOUS TEXT CLASS DEFINITIONS FOLLOW */
+		.textStyle1 {
+			color:blue;
+			text-align:center;
+			font-size:24px;
+		}
+
+		.textStyle2 {
+			color:blue;
+			text-align:left;
+			font-size:22px;
+			text-decoration:underline;
+		}
+
+		.bodyParaText {
+			color:black;
+			text-align:center;
+			font-size: 22px;
+			font-family:garamond;
+			font-weight: 500;
+		}
+
+		/* Define the default for all the table data for class favoritesTable */
+		.projectsTable td{
+			margin-right: auto;
+			margin-left: auto;
+			padding: 10px;
+			text-align: center;
+			vertical-align: middle;
+			color:blue;
+			font-size: 24px;
+			font-family:Luminari;
+			font-weight: 500;
+		}
+
+		/* Define the hover highlight color for the table data class favoritesTable */
+		.newsArchiveTable td:hover{
+			/* background-color: #DC143C; */
+			color: red;
+		}
+
+</style>
+
+
+</head>
+
+<body>
+
+	<!-- FOLLOWING IS THE WELCOME SECTION -->
+    <div class="Title_section">
+        <h1 class="textStyle1">~~~ Cagri Tanriover - Projects Archive ~~~
+		<p style="text-align:center;font-size: 18px;"><i>(last updated on 15 January 2023)</i></p>
+		</h1><br><br>
+    </div>
+	
+   <div class="Intro_section">
+		<p class="bodyParaText">
+		Following are links to some of my interesting projects. You can open the thumbnails in a new tab for a larger view
+		</p><br>
+    </div>
+
+	<!-- FOLLOWING IS THE TABLE STRUCTURE FOR THE FAVORITES SECTION -->
+	<div class="news_Nx1_matrix">
+
+		<div class="Title_section">
+        	<h1 class="textStyle2">
+				Intel related projects:
+			</h1><br><br>
+    	</div>
+
+		<!-- FOLLOWING IS THE INTEL RELATED PROJECTS TABLE -->
+		<table class="projectsTable">
+			<tr>
+				<td style="border: 1px solid black;">
+					<img src=images/intel/Intel_Edison_breakout_board.png  style="height: 200px;">
+					<p>Intel Edison breakout board</p>
+				</td>
+			</tr>
+		</table>
+		<!-- END OF INTEL RELATED PROJECTS TABLE -->
+
+		<div class="Title_section">
+        		<br><br><br><br><h1 class="textStyle2">
+				My startup related projects:
+				</h1><br><br>
+		</div>
+
+		<!-- FOLLOWING IS THE STARTUP PROJECTS TABLE -->
+		<table class="projectsTable">
+			<!-- FIRST ROW OF TABLE -->
+			<tr>
+				<td style="border: 1px solid black;"><img src=images/whiztrack/Desktop_M2M_prototype_2.jpg  style="height: 200px;">
+					<p>First working prototype</p>
+				</td>
+				<td style="border: 1px solid black;"><img src=images/whiztrack/connected_and_working.jpg  style="height: 200px;">
+					<p>First demo in a bag</p>
+				</td>
+				<td style="border: 1px solid black;"><img src=images/whiztrack/Whiztrack_enclosed_with_companyname.jpg  style="height: 200px;">
+					<p>First controller in enclosure</p>
+				</td>
+				<td style="border: 1px solid black;"><img src=images/whiztrack/Whiztrack_controller.jpg  style="height: 200px;">
+					<p>First controller in enclosure</p>
+				</td>
+				<td style="border: 1px solid black;"><img src=images/whiztrack/STC_front_64K_Color_small.jpg  style="height: 200px;">
+					<p>Front of controller</p>
+				</td>
+				<td style="border: 1px solid black;"><img src=images/whiztrack/Whiztrack_wearable_pics.png  style="height: 200px;">
+					<p>First wearable integration</p>
+				</td>
+			</tr>
+			<!-- SECOND ROW OF TABLE -->
+			<tr>
+				<td style="border: 1px solid black;"><img src=images/whiztrack/Whiztrack_belt_formfactor.jpg  style="height: 200px;">
+					<p>Wearable form factor</p>
+				</td>
+				<td style="border: 1px solid black;"><img src=images/whiztrack/Whiztrack_belt_formfactor_2.jpg  style="height: 200px;">
+					<p>Wearable form factor</p>
+				</td>
+			</tr>
+
+		</table>
+		<!-- END OF STARTUP PROJECTS TABLE -->
+
+	</div>
+
+
+</body>
+
+</html>
