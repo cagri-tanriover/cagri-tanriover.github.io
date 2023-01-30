@@ -1,0 +1,1043 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Following meta allows rescaling based on client device -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8">
+	<!-- Following is for using Google material icons on the web page -->
+	<!-- see this link for a full list of icons: https://fonts.google.com/icons?selected=Material+Icons -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <title>Cagri - Recognition Messages</title>
+<style>
+body {background-color: powderblue;}
+
+	div.Title_section {
+	line-height: 50%; /* Line spacing for <div> element Title_section */
+	}
+
+	<!-- FOLLOWING DEFINES AUTONUMBERING USING COUNTERS FOR ORDERED LISTS (ol) AND LIST ITEMS (li) THAT FOLLOW -->
+	ol {
+ 		counter-reset: section;
+ 		list-style-type: none;
+	}
+
+	li::before {
+  		counter-increment: section;
+	}
+
+	/* VARIOUS TEXT CLASS DEFINITIONS FOLLOW */
+		.textStyle0 {
+			color:purple;
+			text-align:left;
+			font-size:22px;
+		}
+
+		.textStyle1 {
+			color:blue;
+			text-align:center;
+			font-size:24px;
+		}
+		
+		.bodyParaText {
+			color:black;
+			text-align:center;
+			font-size: 30px;
+			font-family:garamond;
+			font-weight: 500;
+		}
+		
+		.recogText {
+			color:black;
+			font-size: 24px;
+			font-family:garamond;
+			text-align:justify;
+			margin: 20;
+			margin-left: 80px;
+			width: 90%;
+		}
+
+		.senderText {
+			color:black;
+			font-size: 24px;
+			font-family:garamond;
+			text-align:right;
+		}
+
+		#keywordField {
+			font-size: 24px;
+			font-family:garamond;
+			display: none;
+		}
+
+		/* Following is for styling the input keyword box on page */
+
+		#searchInput {
+  			background-image: url('/images/searchicon.png');
+  			background-position: 10px 5px;
+			background-repeat: no-repeat; /* Do not repeat the icon image */
+			width: 40%; /* Full-width */
+			font-size: 20px; /* Increase font-size */
+			padding: 30px 40px 20px 80px; /* Add some padding */
+			border: 1px solid #ddd; /* Add a grey border */
+			margin-bottom: 12px; /* Add some space below the input */
+			margin-left: 27%; /* Positioning of search box wrt left side of page */
+		}
+
+</style>
+
+</head>
+
+<body>
+
+	<!-- FOLLOWING IS THE WELCOME SECTION -->
+    <div class="Home_button">
+		<p class="textStyle0"><b><a href=index.html>Home Page</a></b></p>
+    </div>
+
+    <div class="Title_section">
+        <h1 class="textStyle1">~~~ Cagri Tanriover - Personal Recognitions Page ~~~
+		</h1><br><br>
+    </div>
+
+    <div class="Summary_section">
+		<p class="bodyParaText">
+			This page is dedicated to the recognitions I have received from peers, managers and executives over the years
+			who have kindly acknowledged my work, efforts and impact.
+			<br>You can type keywords such as "leadership", "communication", "collaboration", "2022" etc. to display my recognitions in those categories only.
+			<br>Alternatively, you can leave the search box empty to see all my recognitions to date.
+			<br><i>(Please note only the initials of the people who have recognized me have been listed below to protect their privacy)</i>
+		</p><br>
+    </div>
+
+	<!-- <label class="bodyParaText">SEARCH:</label> -->
+	<input type="text" id="searchInput" onkeyup="myFunction()" placeholder="Enter a keyword to display relevant recognitions below">
+
+	<!-- IN ORDER TO CREATE KEYWORD FILTERS BASED ON SOFT SKILLS, USE THE CODE ON THE FOLLOWING PAGE:
+	https://www.w3schools.com/howto/howto_js_filter_lists.asp (cleaner option)
+	Below recognition items are organized in an Ordered List (ol) section where each recognition message is a List Item (li)
+	-->
+
+   <ol id="myOL">
+	   <li class="recogText">
+		   <p>
+			   <b>"Many thanks for the wonderful demos you supplied for the London Wearable Tech show. The butterfly dress was the stand out of the show! A lot of work went into the preparation and you showcased the demos beautifully."</b>
+			   <i> - Intel Content & Storytelling Manager G.H., March 2015</i><br>
+			   <span id="keywordField">Keywords: teamwork, collaboration, communication, creativity, interpersonal</span>
+		   </p>
+	   </li>
+
+	   <li class="recogText">
+		   <p>
+			   <b>"Thank you for the tenacity and diligence you have put into the "Ambient Intelligence Research Outlook" study you have carried for Intel Labs Europe! Your hard work, attention to details and reach out to the research community both within and outside Intel has resulted in a comprehensive report. This is an important contribution to Intel Labs Europe research strategy. Well done!"</b>
+			   <i> - My first line manager A.A.E., August 2015</i><br>
+			   <span id="keywordField">Keywords: teamwork, collaboration, self-management, problem solving, leadership</span>
+		   </p>
+	   </li>
+
+	   <li class="recogText">
+		   <p>
+			   <b>“For your creativity and risk taking in submitting a topic to the Research Velocity Challenge. You are role-modelling the kind of behaviour needed to make Intel Labs a source of breakthrough innovations that grows Intel's business.  Keep those ideas coming within your daily work and participating in future challenges!”</b>
+			   <i> - Intel Labs Emerging Technologies Lab Director (Intel Fellow) J.H., August 2015</i><br>
+			   <span id="keywordField">Keywords: creativity, leadership</span>
+
+		   </p>
+	   </li>
+
+	   <li class="recogText">
+		   <p>
+			   <b>“Q3 2015 Intel Labs Europe Workgroup Award: In recognition of your strong submissions to Intel Labs Research Velocity 4. Thank you on behalf of the Intel Labs Europe Staff”</b>
+			   <i> - Intel Labs Europe Technology Manager D.F., October 2015</i><br>
+   			   <span id="keywordField">Keywords: leadership, creativity</span>
+		   </p>
+	   </li>
+
+	   <li class="recogText">
+		   <p>
+			   <b>“Thank you for being part of the Affective Computing TechEd (Technology Education) and for helping us bring to MCM (Management Committee Meeting) a compelling, strong story that will hopefully shape their future thinking around AI!”</b>
+			   <i> - Anticipatory Computing Lab UX & Design (Intel Principal Engineer) D.L., November 2016</i><br>
+   			   <span id="keywordField">Keywords: teamwork, collaboration, leadership, interpersonal</span>
+		   </p>
+	   </li>
+
+	   <li class="recogText">
+		   <p>
+			   <b>“Cagri has organised and driven the discussion and development of several IoT/Transportation-related IDFs I was involved in, making sure to capture all inventors input, following up with committee feedback, and creating a number of high-quality invention disclosures. It's great to see this level of dedication to promoting new ideas in the labs.”</b>
+			   <i> - Intel Labs Research Scientist E.L., February 2016</i><br>
+   			   <span id="keywordField">Keywords: teamwork, collaboration, communication, creativity, organizational</span>
+		   </p>
+	   </li>
+
+	   <li class="recogText">
+		   <p>
+			   <b>“Dear Cagri, Thank you very much for your continued support for the Butterfly Dress Tour! We really appreciate your time and effort - your technical expertise and coaching were essential in getting us ready for this activity. Your positive and collaborative manner has made it a pleasure to work on this project!”</b>
+			   <i> - Intel EMEA Brand Communications Manager O.S., April 2016</i><br>
+   			   <span id="keywordField">Keywords: teamwork, collaboration, communication, leadership, organizational, interpersonal</span>
+		   </p>
+	   </li>
+
+	   <li class="recogText">
+		   <p>
+			   <b>“Thanks for submitting a proposal to the Research Velocity Challenge.  We had an excellent turn out this time with many fine ideas.  I wanted to make this small gesture of appreciation for the effort you took to prepare and submit your idea.  I wish I could have approved more than the four announced today at QGS (Quarterly Group Sync).”</b>
+			   <i> - Intel Labs Emerging Technologies Lab Director (Intel Fellow) J.H., May 2016</i><br>
+   			   <span id="keywordField">Keywords: creativity, leadership</span>
+		   </p>
+	   </li>
+
+	   <li class="recogText">
+		   <p>
+			   <b>“Just a small thank you for all your efforts in making the EMEA Butterfly Dress tour such a success. Thank you for your effort and enthusiasm!”</b>
+			   <i> - Intel EMEA Communications Director F.A., May 2016</i><br>
+   			   <span id="keywordField">Keywords: teamwork, collaboration, communication, leadership, organizational, interpersonal</span>
+		   </p>
+	   </li>
+
+	   <li class="recogText">
+		   <p>
+			   <b>“Thank you so much for taking half of your day to participate in our Bot Solutions Venture Ux Exercise. Your participation and contributions were invaluable, and our team now has many new ideas and approaches to consider as part of our venture. We really appreciate you making the time for this, and hope to keep in touch in the future!”</b>
+			   <i> - Intel VENTURE Leadership Pipeline Program’s Bot Solutions Venture Business Lead E.M.C., January 2017</i><br>
+   			   <span id="keywordField">Keywords: teamwork, collaboration, communication, problem solving, creativity, leadership, interpersonal</span>
+		   </p>
+	   </li>
+
+	   <li class="recogText">
+		   <p>
+			   <b>“Thank you Cagri for seamlessly taking care of the Patent Workshop and pushing things forward.  I appreciate it!”</b>
+			   <i> - Patent 101 Hillsboro Charter co-lead M.S., August 2017</i><br>
+   			   <span id="keywordField">Keywords: teamwork, collaboration, communication, problem solving, leadership, organizational, interpersonal</span>
+		   </p>
+	   </li>
+
+	   <li class="recogText">
+		   <p>
+			   <b>“Thank you for your effort and time mentoring and coaching our group of inventors at the first Oregon Patent101 Workshop.  The attendees were primarily folks that we signed up at the WIN (Women In Engineering)  conference and we had a number of folks that signed up from word of mouth - spanning many BU's (Business Units).  Your investment of time has impacted these folks and they left understanding the Intel patent process. Sharing your talents and experience with your fellow employees IS what makes Intel a great place to work!”</b>
+			   <i> - Patent 101 Hillsboro Charter co-lead M.S., November 2017</i><br>
+   			   <span id="keywordField">Keywords: communication, leadership, interpersonal</span>
+		   </p>
+	   </li>
+
+	   <li class="recogText">
+		   <p>
+			   <b>“Thank you for participating in the voluntary data collection study for the vibration sensing glasses!”</b>
+			   <i> - Acoustics Research Team Lead (Intel Principal Engineer) W.M.B., September 2017</i><br>
+   			   <span id="keywordField">Keywords: teamwork, collaboration, communication, interpersonal</span>
+		   </p>
+	   </li>
+
+	   <li class="recogText">
+		   <p>
+			   <b>“Hi Cagri, My utmost gratitude to you for being a great mentor & role model for IDF/patent creation & submission. I can't thank you enough for always being so supportive of new ideas and providing constructive feedback to improve them. It's inspirational to see how you foster innovation & creative thinking as well as volunteer your time & energy to help grow others. Many thanks for above & beyond help with IDF review & filing.”</b>
+			   <i> - One of my patent mentees Platform Architect B.Z., December 2017</i><br>
+   			   <span id="keywordField">Keywords: teamwork, collaboration, communication, problem solving, creativity, leadership, interpersonal</span>
+		   </p>
+	   </li>
+
+	   <li class="recogText">
+		   <p>
+			   <b>“Dear Cagri, You have been extremely supportive in Adaptive Learning Data Preparation for Labelling through an automated method. Without your support, it could have been extremely difficult to get the progress we made so far.”</b>
+			   <i> - Human Behavior Understanding Principal Investigator S.A., January 2018</i><br>
+   			   <span id="keywordField">Keywords: teamwork, collaboration, communication, problem solving, creativity, leadership, computing, computer</span>
+		   </p>
+	   </li>
+
+	   <li class="recogText">
+		   <p>
+			   <b>“Hi Cagri, Thanks for taking time out of your busy schedule to give a detailed presentation on Patent disclosures. You shared great BKMs on how to respond if a Patent is rejected. It was very informative and encouraging. Your passion  about this topic is reflected in your presentation. Great job. THANKS AGAIN!!!!”</b>
+			   <i> - HR Analyst-Career Mobility Strategist, D.M., March 2018</i><br>
+   			   <span id="keywordField">Keywords: communication, leadership, interpersonal</span>
+		   </p>
+	   </li>
+
+	   <li class="recogText">
+		   <p>
+			   <b>“Cagri, thanks for taking the time to participate in the Kid Space study in March! This was extremely helpful!”</b>
+			   <i> - Anticipatory Computing Lab UX Principal Investigator, G.A., April 2018</i><br>
+   			   <span id="keywordField">Keywords: teamwork, collaboration, communication, interpersonal</span>
+		   </p>
+	   </li>
+
+	   <li class="recogText">
+		   <p>
+			   <b>“Thank you for participating in the voluntary speech intelligibility study!”</b>
+			   <i> - Acoustics Research Team Lead (Intel Principal Engineer) W.M.B., May 2018</i><br>
+   			   <span id="keywordField">Keywords: teamwork, collaboration, communication, interpersonal</span>
+		   </p>
+	   </li>
+
+	   <li class="recogText">
+		   <p>
+			   <b>“Thank you Cagri, for your dedication and excellent work in developing the Patent 101 Global template to be used for future Patent 101 workshops across all sites.  Your passion and commitment to expand the innovation mindset across Intel and to empower everyone with the ability to invent is critical to the success of our company.  Your work exemplifies what it means to be a leader and I am honoured that you are part of the Patent Workshop core team.”</b>
+			   <i> - Patent 101 Workshops Founder E.P., June 2018</i><br>
+   			   <span id="keywordField">Keywords: teamwork, collaboration, communication, leadership, organizational, computing, computer</span>
+		   </p>
+	   </li>
+
+	   <li class="recogText">
+		   <p>
+			   <b>“Cagri, Thank you for being part of the team that committed to a very ambitious goal to recognize emotions in the wild.  This multi-disciplinary team spanning all groups in Anticipatory Computing Lab has successfully delivered a mobile platform for the phone and car, a key enabler for emotion recognition.”</b>
+			   <i> - Director of Anticipatory Computing Lab (Intel Fellow) L.N., June 2018</i><br>
+   			   <span id="keywordField">Keywords: teamwork, collaboration, communication, self-management, problem solving, creativity, leadership, organizational, interpersonal, computing, computer</span>
+		   </p>
+	   </li>
+
+	   <li class="recogText">
+		   <p>
+			   <b>“Thank you Cagri for dedicating some of your precious time to help me with one of my projects! I sincerely appreciated your insights and found them very helpful.”</b>
+			   <i> - Anticipatory Computing Lab UX & Design (Intel Principal Engineer) D.L., June 2018</i><br>
+   			   <span id="keywordField">Keywords: teamwork, collaboration, communication, interpersonal</span>
+		   </p>
+	   </li>
+
+	   <li class="recogText">
+		   <p>
+			   <b>“I would like to recognize Cagri for his constant support and guidance on our very first IDF submission. He has a great vision and flawlessly led our team of 5. Cagri is a wonderful teacher, leader, and friend. He took us under his wing and groomed us to be sound patent professionals. THANK YOU for being our mentor and guiding us on the right path. You are everything one could look for in a mentor!!!”</b>
+			   <i> - One of my patent mentees, Software Engineer A.G., August 2018</i><br>
+   			   <span id="keywordField">Keywords: communication, problem solving, creativity, leadership, interpersonal</span>
+		   </p>
+	   </li>
+
+	   <li class="recogText">
+		   <p>
+			   <b>“Cagri, Thank you for being part of the team that performed the data collection, labelling and quality checks for the AMIE (Autonomous car Multimodal In-cabin Experiences)  scavenger hunt, resulting in a unique dataset in autonomous driving to enable Anticipatory Computing Lab’s research and the transfer of the dataset and methodology to business units.”</b>
+			   <i> - Director of Anticipatory Computing Lab (Intel Fellow) L.N., September 2018</i><br>
+   			   <span id="keywordField">Keywords: teamwork, collaboration, communication, self-management, problem solving, creativity, leadership, organizational, computing, computer</span>
+		   </p>
+	   </li>
+
+	   <li class="recogText">
+		   <p>
+			   <b>“Thanks Cagri for your formidable efforts related to the POC Frustration study. While I am sorry to hear you spent days AND nights to ensure tech readiness for the study, I am extremely grateful for and constantly impressed by your result orientation and professionalism. Bravo!”</b>
+			   <i> - Anticipatory Computing Lab UX & Design (Intel Principal Engineer) D.L., November 2018</i><br>
+   			   <span id="keywordField">Keywords: teamwork, collaboration, communication, self-management, problem solving, leadership, organizational, computing, computer</span>
+		   </p>
+	   </li>
+
+	   <li class="recogText">
+		   <p>
+			   <b>“Cagri, Many thanks for your support for the patent think tank that was held in OR Jones Farms on Nov 13th. Your contribution is more than valuable and opened important solutions for key problem spaces for Autonomous vehicles and your support for the think tank prep in Jones Farms is more than appreciated!”</b>
+			   <i> - Autonomous Platforms and Technologies Think Tank Lead (Intel Principal Engineer) M.H., November 2018</i><br>
+   			   <span id="keywordField">Keywords: teamwork, collaboration, communication, problem solving, creativity</span>
+		   </p>
+	   </li>
+
+	   <li class="recogText">
+		   <p>
+			   <b>“Cagri, Thank you for your effort and time co-leading, mentoring and coaching our group of inventors at the Q4 Oregon Patent101 Workshop.  Your investment of time has made an impact on the folks you are mentoring. Sharing your talents and experience with your fellow employees IS what makes Intel a great place to work!”</b>
+			   <i> - Patent 101 Hillsboro Charter co-lead M.S., November 2018</i><br>
+   			   <span id="keywordField">Keywords: teamwork, collaboration, communication, problem solving, creativity, leadership, organizational, interpersonal</span>
+		   </p>
+	   </li>
+
+	   <li class="recogText">
+		   <p>
+			   <b>“Hi Cagri, Thank you so much for taking the time to speak with me and share your experience on conducting patent harvesting workshops. This is really helpful and exactly the kind of information we were looking for. Appreciate your willingness to guide us and share your knowledge on this.”</b>
+			   <i> - Client Computing Group Innovation Lead N.T., December 2018</i><br>
+   			   <span id="keywordField">Keywords: teamwork, collaboration, communication, leadership, interpersonal</span>
+		   </p>
+	   </li>
+
+	   <li class="recogText">
+		   <p>
+			   <b>“On behalf of Matthew (M. Smith) and HR, I’m thrilled to add my own thanks for all the wonderful work you did during Intel’s 50th year as a career program volunteer working on Career Connections, Career Zone, Blue Hire and Retention programs. Because of your commitment, energy and enthusiasm, Intel enhanced the careers of more than 20,000 employees this year. Importantly, you helped advance hiring and retention strategies that underpin Intel’s momentum as we expand our role in an increasingly data-driven world.”</b>
+			   <i> - Intel Corporate Operations Training Manager V.G., December 2018</i><br>
+   			   <span id="keywordField">Keywords: communication, leadership, interpersonal</span>
+		   </p>
+	   </li>
+
+	   <li class="recogText">
+		   <p>
+			   <b>“Thanks for the great and detailed feedback you provided on the RFID IDF. You went above and beyond in providing such good info. Really appreciate it…”</b>
+			   <i> - Multimodal Activity Understanding Team RFID Sensing Principal Investigator (Intel Research Scientist) C.W., April 2019</i><br>
+   			   <span id="keywordField">Keywords: teamwork, collaboration, communication, problem solving, leadership, interpersonal</span>
+		   </p>
+	   </li>
+
+	   <li class="recogText">
+		   <p>
+			   <b>“Cagri - Thank you for being part of the team working across groups to define and test sensor setups, develop user interaction scripts, analyse data and develop post processing scripts for the complex multi modal data collection experiments in March and May.”</b>
+			   <i> - Director of Intelligent Systems Lab (Intel Fellow) L.N., June 2019</i><br>
+   			   <span id="keywordField">Keywords: teamwork, collaboration, communication, self-management, problem solving, organizational, computing, computer</span>
+		   </p>
+	   </li>
+
+	   <li class="recogText">
+		   <p>
+			   <b>“Cagri: thank you for your help in getting the acoustic recordings completed at Free Orchards school. The detailed test plan and execution resulted in valuable data for the Performance Bet.”</b>
+			   <i> - Acoustics Research Team Lead (Intel Principal Engineer) W.M.B., June 2019</i><br>
+   			   <span id="keywordField">Keywords: teamwork, collaboration, communication, problem solving, organizational, computing, computer</span>
+		   </p>
+	   </li>
+
+	   <li class="recogText">
+		   <p>
+			   <b>“Cagri, thanks for helping us to set up the NUC, it really helped us to move forward with relevant tests we needed to do.”</b>
+			   <i> - Human Behavior Understanding Principal Investigator S.A., July, 2019</i><br>
+   			   <span id="keywordField">Keywords: teamwork, collaboration, self-management, problem solving, organizational, computing, computer</span>
+		   </p>
+	   </li>
+
+	   <li class="recogText">
+		   <p>
+			   <b>“Today marks your 5-year Intel anniversary. The growth of our company and the success we have achieved has been due to the dedication of our people. Dedicated employees are an organisation’s most important resource. We appreciate your service and the contributions you have made. We’re thankful you are an integral part of our team.”</b>
+			   <i> - My first line manager (Intel Principal Engineer) R.S., August 2019</i><br>
+   			   <span id="keywordField">Keywords: teamwork, collaboration</span>
+		   </p>
+	   </li>
+
+	   <li class="recogText">
+		   <p>
+			   <b>“THANK YOU for your amazing energy, dedication and collaboration in an effort to rapidly prototype new concepts involving tangible objects for the Ambient Computing Performance Bet (Kids Space) project.”</b>
+			   <i> - Director of Intelligent Systems Lab (Intel Fellow) L.N., September 2019</i><br>
+   			   <span id="keywordField">Keywords: teamwork, collaboration, communication, self-management, problem solving, creativity, leadership, computing, computer</span>
+		   </p>
+	   </li>
+
+	   <li class="recogText">
+		   <p>
+			   <b>“Thank you Cagri for an amazing Patent Workshop! On behalf of my team, I would like to sincerely thank you for your great contribution and leadership supporting innovation in our team and at Intel! Really appreciate your passion, commitment, and time !”</b>
+			   <i> - Visual Cloud Software Team Manager, B.K., September 2019</i><br>
+   			   <span id="keywordField">Keywords: teamwork, collaboration, communication, self-management, leadership, interpersonal</span>
+		   </p>
+	   </li>
+
+	   <li class="recogText">
+		   <p>
+			   <b>“Thank you Cagri for providing very valuable feedback in completing our IDF! We really appreciate your help!”</b>
+			   <i> - One of my patent mentees Software Engineer M.K., October 2019</i><br>
+   			   <span id="keywordField">Keywords: communication, leadership, interpersonal</span>
+		   </p>
+	   </li>
+
+	   <li class="recogText">
+		   <p>
+			   <b>“Hi Cagri, Thanks so much for your warm help during our IDF submission process. Your advice inspired our whole team to work in the right direction. We are inspired by your broad knowledge and working attitude. Thanks for showing us "One Intel" spirit!”</b>
+			   <i> - Lead inventor of one of the teams I mentored for filing a patent, M.L., October 2019</i><br>
+   			   <span id="keywordField">Keywords: communication, self-management, leadership, interpersonal</span>
+		   </p>
+	   </li>
+
+	   <li class="recogText">
+		   <p>
+			   <b>“Thank you so much, Cagri for motivating and helping us through the IDF process resulting in our very first IDF submission!”</b>
+			   <i> - Lead inventor of one of the teams I mentored for filing a patent, S.G., October 2019 </i><br>
+   			   <span id="keywordField">Keywords: communication, self-management, leadership, interpersonal</span>
+		   </p>
+	   </li>
+
+	   <li class="recogText">
+		   <p>
+			   <b>“Dear Cagri, Thank you for your feedback on the PC Frustration Study. Your feedback is greatly appreciated.”</b>
+			   <i> - Human Behavior Understanding Principal Investigator S.A., November 2019</i><br>
+   			   <span id="keywordField">Keywords: teamwork, collaboration, communication</span>
+		   </p>
+	   </li>
+
+	   <li class="recogText">
+		   <p>
+			   <b>“Thank you for amazing work throughout the year inventing and combining new capabilities to create a new kind of learning experience for kids, as demonstrated by the successful demo at the Intel Labs Open House. Thank you all for helping figure out how we achieve large scale collaboration.”</b>
+			   <i> - Director of Intelligent Systems Lab (Intel Fellow) L.N., December 2019</i><br>
+   			   <span id="keywordField">Keywords: teamwork, collaboration, self-management, problem solving, creativity</span>
+		   </p>
+	   </li>
+
+	   <li class="recogText">
+		   <p>
+			   <b>“Thank you for a successful demo of wireless sensing @Intel Labs Open House. The Live demo was a great proof of concept of motion sensing based on CSI information extracted from Intel’s WiFi Platform. It showcased to our stakeholders the feasibility of Wi-Fi sensing for activity recognition.”</b>
+			   <i> - Director of Intelligent Systems Lab (Intel Fellow) L.N., December 2019</i><br>
+   			   <span id="keywordField">Keywords: teamwork, collaboration, communication, problem solving, leadership, organizational, interpersonal, computing, computer</span>
+		   </p>
+	   </li>
+
+	   <li class="recogText">
+		   <p>
+			   <b>“Thank you for jumping in and getting the demo working for Adaptive Learning, including data collection, SW development, demo & poser materials in record time. This resulted in successful customer demos in China at the education summit.”</b>
+			   <i> - Director of Intelligent Systems Lab (Intel Fellow) L.N., December 2019 </i><br>
+   			   <span id="keywordField">Keywords: teamwork, collaboration, communication, self-management, problem solving, creativity, organizational, computing, computer</span>
+		   </p>
+	   </li>
+
+	   <li class="recogText">
+		   <p>
+			   <b>“Dear Cagri, Thank you for supporting us to get ready for an in-the-wild deployment in Adaptive Learning in such a short amount of time. Your support is greatly appreciated despite all the other workload you have.”</b>
+			   <i> - Human Behavior Understanding Principal Investigator S.A., November 2019</i><br>
+   			   <span id="keywordField">Keywords: teamwork, collaboration, communication, self-management, problem solving, creativity, organizational, computing, computer</span>
+		   </p>
+	   </li>
+
+	   <li class="recogText">
+		   <p>
+			   <b>“Thank you for being a great partner that always jumps in to take on the toughest tasks at hand with such passion that makes everything look doable !”</b>
+			   <i> - Multimodal Activity Understanding Team RFID Sensing Principal Investigator (Intel Research Scientist) C.W., March 2020</i><br>
+   			   <span id="keywordField">Keywords: teamwork, collaboration, problem solving, creativity, computing, computer</span>
+		   </p>
+	   </li>
+
+	   <li class="recogText">
+		   <p>
+			   <b>“Thank you so much Cagri for your help in driving the IP Harvesting process for Kid Space! You are a great collaborator and it is always a pleasure working with you !”</b>
+			   <i> - Smart Spaces and Interactions Team Manager in Intelligent Systems Lab (Intel Principal Engineer) G.R., May 2020</i><br>
+   			   <span id="keywordField">Keywords: teamwork, collaboration, communication</span>
+		   </p>
+	   </li>
+
+	   <li class="recogText">
+		   <p>
+			   <b>“On behalf of the Intel Patent Group, we want to express sincere gratitude to Cagri Tanriover for his contribution to the Autonomous Platform Technologies Committee. Cagri’s contribution not only helps us identify the right invention for patent filing, it also helps Intel improve its overall patent portfolio and strengthens our relationship with the inventor community.  We hope to continue our collaboration in the future and achieve One Intel success in building a robust IP portfolio.”</b>
+			   <i> - Autonomous Platforms and Technologies IP Group Portfolio Manager I.M., May 2020 (provided to my line manager with me in the CC)</i><br>
+   			   <span id="keywordField">Keywords: teamwork, collaboration, communication, self-management</span>
+		   </p>
+	   </li>
+
+	   <li class="recogText">
+		   <p>
+			   <b>“Thanks a lot for the productive collaboration on creating new invention disclosures / patents. I appreciate your deep technical knowledge and great writing skills. Let's continue to create great results across business units.”</b>
+			   <i> - One of my co-inventors in Intel Germany, Research Scientist D.P., June 2020</i><br>
+   			   <span id="keywordField">Keywords: teamwork, collaboration, communication, self-management, problem solving, creativity, organizational, computing, computer</span>
+		   </p>
+	   </li>
+
+	   <li class="recogText">
+		   <p>
+			   <b>“Thank you, Cagri, for developing the new Virtual Patent101 Workshop. Your commitment to growing Intel's innovation community is greatly appreciated!”</b>
+			   <i> - Patent 101 Workshops Founder E.P., June 2020</i><br>
+   			   <span id="keywordField">Keywords: teamwork, collaboration, communication, problem solving, creativity, leadership, interpersonal, computing, computer</span>
+		   </p>
+	   </li>
+
+	   <li class="recogText">
+		   <p>
+			   <b>“Thank you so much for volunteering to be a panel member for our Oregon Patent101 Virtual Workshop for the medical device group. Your feedback goes a long way to demystifying the patent committees for those that submit IDFs. We have received excellent feedback on this workshop and your open and honest feedback helps to foster trust and transparency between the Intel innovators and the Patent Committees.”</b>
+			   <i> - Patent 101 Workshops Mentor/Consultant M.S., June 2020</i><br>
+   			   <span id="keywordField">Keywords: teamwork, collaboration, communication, leadership, interpersonal</span>
+		   </p>
+	   </li>
+
+	   <li class="recogText">
+		   <p>
+			   <b>“Thank you for providing a review of the patent applications and working with the Health and Life Sciences team. This review was very valuable for the team.”</b>
+			   <i> - Health, Education and Consumer Group Innovation Lead, (Intel Principal Engineer) M.T., June 2020</i><br>
+   			   <span id="keywordField">Keywords: teamwork, collaboration, communication, leadership, interpersonal</span>
+		   </p>
+	   </li>
+
+	   <li class="recogText">
+		   <p>
+			   <b>“Cagri - Thank you for creating a methodology for running the Patent 101 workshops on a virtual platform that enables hands-on work. This methodology will now be adopted by all Patent 101 sites at Intel to run future virtualized workshops enabling much broader participation and remote workshop attendance.”</b>
+			   <i> - Director of Intelligent Systems Lab (Intel Fellow) L.N., July 2020</i><br>
+   			   <span id="keywordField">Keywords: teamwork, collaboration, communication, problem solving, creativity, leadership, interpersonal, computing, computer</span>
+		   </p>
+	   </li>
+
+	   <li class="recogText">
+		   <p>
+			   <b>“Thank you, Cagri, for developing the content and leading the best patent workshop sessions in a virtual environment! We had a lot of participation and 15 ideas generated! Your ability to teach and inspire are the reason we had a lot of committed participation! Thank you for growing the inventor community!”</b>
+			   <i> - Patent 101 Workshops Founder E.P., August 2020</i><br>
+   			   <span id="keywordField">Keywords: teamwork, collaboration, communication, leadership, interpersonal</span>
+		   </p>
+	   </li>
+
+	   <li class="recogText">
+		   <p>
+			   <b>“Thank you for your significant effort in driving and leading the first virtual patent 101 workshop. Your leadership resulted in participation and collaboration on over 15 innovative ideas across multiple AMR sites and business units. Excellent job done in role-modelling One Intel and Fearless!”</b>
+			   <i> - Patent 101 Workshops Consultant/Mentor (Intel Principal Engineer) Y.P., August 2020</i><br>
+   			   <span id="keywordField">Keywords: teamwork, collaboration, communication, self-management, leadership, interpersonal, computing, computer</span>
+		   </p>
+	   </li>
+
+	   <li class="recogText">
+		   <p>
+			   <b>“Thank you, Cagri, for leading the Virtual Patent Workshop to its successful conclusion this month! Your ability to encourage others to grow their innovation mindset and actively participate in a virtual setting is fantastic. Your commitment to growing the innovation community is greatly appreciated!”</b>
+			   <i> - Patent 101 Workshops Founder E.P., August 2020</i><br>
+   			   <span id="keywordField">Keywords: teamwork, collaboration, communication, self-management, leadership, interpersonal</span>
+		   </p>
+	   </li>
+
+	   <li class="recogText">
+		   <p>
+			   <b>“Thank you Cagri for your contribution to the Intel Patent Group in evaluating our patent portfolio. We appreciated your technical expertise and your One Intel behaviour during this rotation and look forward to continuing to work with you in the future!”</b>
+			   <i> - Autonomous Platforms and Technologies IP Group Portfolio Manager I.M., August 2020</i><br>
+   			   <span id="keywordField">Keywords: teamwork, collaboration, communication, self-management, organizational, interpersonal, computing, computer</span>
+		   </p>
+	   </li>
+
+	   <li class="recogText">
+		   <p>
+			   <b>“Thank you, Cagri, for leading the training sessions for the Patent101 Workshop . Your expertise and advice are greatly appreciated. Your encouragement and support really help first time inventors and go a long way to grow the innovation community and technical pipeline!”</b>
+			   <i> - Patent 101 Workshops Founder E.P., October 2020</i><br>
+   			   <span id="keywordField">Keywords: teamwork, collaboration, communication, self-management, leadership, interpersonal</span>
+		   </p>
+	   </li>
+
+	   <li class="recogText">
+		   <p>
+			   <b>“Thank you, Cagri, for all your leadership this year as an instructor and Consultant for Patent101. With your help we launched successful virtual workshops that have reached sites from GDC to across the US. Thank you for growing the technical pipeline!”</b>
+			   <i> - Patent 101 Workshops Founder E.P., December 2020</i><br>
+   			   <span id="keywordField">Keywords: teamwork, collaboration, communication, self-management, leadership, interpersonal</span>
+		   </p>
+	   </li>
+
+	   <li class="recogText">
+		   <p>
+			   <b>“Thank you for all your hard work in 2020”</b>
+			   <i> - Director of Software Systems Research Lab, P.M., December 2020</i><br>
+   			   <span id="keywordField">Keywords: teamwork, collaboration, self-management, problem solving, creativity, computing, computer</span>
+		   </p>
+	   </li>
+
+	   <li class="recogText">
+		   <p>
+			   <b>“Thank you, Cagri, for leading the first session of the Virtual Patent101 Workshop. Your presentation and encouraging brainstorming session kickstarted 21 ideas for the workshop series. Thank you for growing the innovation mindset!”</b>
+			   <i> - Patent 101 Workshops Founder E.P., February 2021</i><br>
+   			   <span id="keywordField">Keywords: teamwork, collaboration, communication, self-management, leadership, interpersonal</span>
+		   </p>
+	   </li>
+
+	   <li class="recogText">
+		   <p>
+			   <b>“Thank you, Cagri, for leading and mentoring the inventor teams to prepare their invention for the 2021 Virtual Patent Workshop. Your support and expertise were greatly appreciated! We started with 22 ideas and had 14 IDFs presented. Thank you for growing the innovation community at Intel!”</b>
+			   <i> - Patent 101 Workshops Founder E.P., March 2021</i><br>
+   			   <span id="keywordField">Keywords: teamwork, collaboration, communication, self-management, leadership, interpersonal</span>
+		   </p>
+	   </li>
+
+	   <li class="recogText">
+		   <p>
+			   <b>“Thank you for almost 2 years of excellent collaboration and teamwork focused on Intel's success. The way this program was designed, this could have become a competitive nightmare (as evidenced by the reaction of other teams). Instead, we enjoyed a fruitful, constructive collaboration that helped us all progress in the research faster and with more success. Many thanks!”</b>
+			   <i> - Systems, Software and Architecture Lab Research Scientist K.J., April 2021</i><br>
+   			   <span id="keywordField">Keywords: teamwork, collaboration, communication, problem solving, organizational, interpersonal, computing, computer</span>
+		   </p>
+	   </li>
+
+	   <li class="recogText">
+		   <p>
+			   <b>“Thank you, Cagri, for launching the Spring Virtual Patent101 session. Your presentations are inspiring and informative. The preparation for each session has ensured effective and collaborative experiences for the teams. Your leadership is greatly appreciated!”</b>
+			   <i> - Patent 101 Workshops Founder E.P., April 2021</i><br>
+   			   <span id="keywordField">Keywords: teamwork, collaboration, communication, self-management, leadership, interpersonal</span>
+		   </p>
+	   </li>
+
+	   <li class="recogText">
+		   <p>
+			   <b>“Thank you, Cagri, for your expertise and leadership as a Pitch to Panel Consultant at the Q2 2021 Virtual Patent Workshop. Your support and mentorship were greatly appreciated! Thank you for growing the innovation community at Intel!”</b>
+			   <i> - Patent 101 Workshops Founder E.P., April 2021</i><br>
+   			   <span id="keywordField">Keywords: teamwork, collaboration, communication, self-management, leadership, interpersonal</span>
+		   </p>
+	   </li>
+
+	   <li class="recogText">
+		   <p>
+			   <b>“Thank you, Cagri, for taking the time to mentor Patent101 participants to prepare for the workshop Pitch to Panel session. Your commitment to growing the inventor community is greatly appreciated!”</b>
+			   <i> - Patent 101 Workshops Founder E.P., June 2021</i><br>
+   			   <span id="keywordField">Keywords: teamwork, collaboration, communication, self-management, leadership, interpersonal</span>
+		   </p>
+	   </li>
+
+	   <li class="recogText">
+		   <p>
+			   <b>“Thank you, Cagri, for your leadership and technical expertise at Germany's Patent101 Workshop Pitch to Panel Session. Your guidance is greatly appreciated! Thank you for growing the Innovation community at Intel.”</b>
+			   <i> - Patent 101 Workshops Founder E.P., July 2021</i><br>
+   			   <span id="keywordField">Keywords: teamwork, collaboration, communication, self-management, leadership, interpersonal</span>
+		   </p>
+	   </li>
+
+	   <li class="recogText">
+		   <p>
+			   <b>“Great job in putting together the material for the IL Open House and for a very successful demo of Wi-Fi sensing. The work really showcased high quality, and in a super-short time frame.”</b>
+			   <i> - My first line manager (Intel Principal Engineer) Rahul Shah, July 2021</i><br>
+   			   <span id="keywordField">Keywords: teamwork, collaboration, communication, self-management, leadership, organizational, interpersonal, computing, computer</span>
+		   </p>
+	   </li>
+
+	   <li class="recogText">
+		   <p>
+			   <b>“Thank you very much for your support at the first "IP Harvesting and Patent Mentoring Initiative Germany" event. With this activity we are extending the idea behind Patent101 towards Germany with the target to support the entire European time zone. I am heavily impressed about the energy, engagement and enthusiasm you all brought into our sessions and how you all role-modelled the One-Intel spirit. We learned so much and are already seeing the first returns on our and your investments!”</b>
+			   <i> - Systems, Software and Architecture Lab Research Science Manager K.U.S, July 2021</i><br>
+   			   <span id="keywordField">Keywords: teamwork, collaboration, communication, self-management, leadership, interpersonal</span>
+		   </p>
+	   </li>
+
+	   <li class="recogText">
+		   <p>
+			   <b>“Thank you, Cagri, for providing feedback on IDF pitches from CCG's Harvesting session. Your guidance and expertise are critical for the growth of Intel's inventor community.”</b>
+			   <i> - Patent 101 Workshops Founder E.P., August 2021</i><br>
+   			   <span id="keywordField">Keywords: teamwork, collaboration, communication, self-management, leadership, interpersonal</span>
+		   </p>
+	   </li>
+
+	   	   <li class="recogText">
+		   <p>
+			   <b>“Thank you, Cagri, for preparing the Patent 101 team site and then leading the brainstorming and Ideation sessions for the Asia Patent101 session. You helped capture 33 different ideas! Thank you for creating a collaborative environment for participants to share ideas!”</b>
+			   <i> - Patent 101 Workshops Founder E.P., August 2021</i><br>
+   			   <span id="keywordField">Keywords: teamwork, collaboration, communication, self-management, problem solving, creativity, leadership, interpersonal</span>
+		   </p>
+	   </li>
+
+	   	   <li class="recogText">
+		   <p>
+			   <b>“Thank you, Cagri, for your leadership in mentoring Patent101 participants on their Invention Disclosure presentation. Your commitment to growing the innovation community in Malaysia is greatly appreciated.”</b>
+			   <i> - Patent 101 Workshops Founder E.P., September 2021</i><br>
+   			   <span id="keywordField">Keywords: teamwork, collaboration, communication, self-management, leadership, interpersonal</span>
+		   </p>
+	   </li>
+
+	   	   <li class="recogText">
+		   <p>
+			   <b>“Thank you, Cagri, for your technical expertise and guidance as a Patent101 panellist for the Pitch to Panel session. Your encouragement and passion for innovation are greatly appreciated. Thank you for growing the technical pipeline at Intel Malaysia.”</b>
+			   <i> - Patent 101 Workshops Founder E.P., September 2021</i><br>
+   			   <span id="keywordField">Keywords: teamwork, collaboration, communication, self-management, leadership, interpersonal</span>
+		   </p>
+	   </li>
+
+	   <li class="recogText">
+		   <p>
+			   <b>“Thank You for organising Patent101 workshop in Asia by bringing in mentors and panellists to us. It was a very nice 4-session event with all the excellent mentors and panellists, we learnt a lot and received valuable feedback, the whole team value this workshop a lot. THANK YOU!”</b>
+			   <i> - Network & Edge Solutions Group Innovation Lead S.C.T., September 2021</i><br>
+   			   <span id="keywordField">Keywords: teamwork, collaboration, communication, self-management, leadership, organizational, interpersonal</span>
+		   </p>
+	   </li>
+
+	   <li class="recogText">
+		   <p>
+			   <b>“Cagri, Once again a great event - thanks for putting in the effort to make it a success! You are a rock-star in the patent world. Thank you!”</b>
+			   <i> - Patent 101 Hillsboro Charter co-lead M.S., September 2021</i><br>
+   			   <span id="keywordField">Keywords: teamwork, collaboration, communication, self-management, leadership, interpersonal</span>
+		   </p>
+	   </li>
+
+	   <li class="recogText">
+		   <p>
+			   <b>“Many thanks Cagri for a great presentation about patents and the process to self-discover the inventor side as part of this year's Costa Rica Road to Ideation keynote series. I'm receiving very good feedback about it. With this effort, you contributed to our goal of becoming one of Intel's top innovative sites. Many thanks again.”</b>
+			   <i> - Intel Costa Rica Ideation Conference Co-organizer G.T., October 2021</i><br>
+   			   <span id="keywordField">Keywords: communication, leadership, interpersonal</span>
+		   </p>
+	   </li>
+
+	   <li class="recogText">
+		   <p>
+			   <b>“Q3 Award for your Intel Labs Open House Demo! WiFi Sensing: Enabling Ambient Sensing Over Standard Wi-Fi. Great work!”</b>
+			   <i> - Director of Intelligent Systems Lab (Intel Fellow) L.N., November 2021</i><br>
+   			   <span id="keywordField">Keywords: communication, self-management, problem solving, creativity, interpersonal, computing, computer</span>
+		   </p>
+	   </li>
+
+	   <li class="recogText">
+		   <p>
+			   <b>“Thank you Cagri, for your technical leadership and commitment to innovation in the Q4 Patent101 sessions. Your vision and passion have delivered Patent 101 knowledge to a global community. Thank you for leading the virtual training and mentoring the participants to help them write up effective IDFs. Your commitment to growing the innovation community at Intel is greatly appreciated.”</b>
+			   <i> - Patent 101 Workshops Founder E.P., November 2021</i><br>
+   			   <span id="keywordField">Keywords: teamwork, collaboration, communication, self-management, leadership, interpersonal, computing, computer</span>
+		   </p>
+	   </li>
+
+	   <li class="recogText">
+		   <p>
+			   <b>“Thank you Cagri for your efforts in evaluating invention submissions of the Autonomous Platform Technologies committee this year. Your deep technical expertise and experience help Intel improve the overall quality of its patent portfolio. We really appreciate your help in the portfolio evaluation workshop during your Development Opportunity Task (DOT) rotation as well as invention training. We hope to have your continuing support in the future.”</b>
+			   <i> - Autonomous Platforms and Technologies IP Group Portfolio Manager I.M., November 2021</i><br>
+   			   <span id="keywordField">Keywords: teamwork, collaboration, communication, self-management, leadership, interpersonal, computing, computer</span>
+		   </p>
+	   </li>
+
+	   <li class="recogText">
+		   <p>
+			   <b>“Thanks Cagri for your help in conducting patent training to Intel Finland. Your perspective as a committee member helps other engineers understand what's important for Intel patent filings and plants a seed in better quality in future inventions submissions.”</b>
+			   <i> - Autonomous Platforms and Technologies IP Group Portfolio Manager I.M., December 2021</i><br>
+   			   <span id="keywordField">Keywords: teamwork, collaboration, communication, self-management, leadership, interpersonal, computing, computer</span>
+		   </p>
+	   </li>
+
+	   <li class="recogText">
+		   <p>
+			   <b>“Hello, thank you for the great Patent training session for the Finland employees!”</b>
+			   <i> - Corporate Strategy Office, Incubation, Disruption and Innovation Administrator S.E., December 2021</i><br>
+   			   <span id="keywordField">Keywords: communication, self-management, leadership, interpersonal, computing, computer</span>
+		   </p>
+	   </li>
+
+	   <li class="recogText">
+		   <p>
+			   <b>“Thanks Cagri for your help in conducting patent training to Intel Finland. Your perspective as a committee member helps other engineers understand what's important for Intel patent filings and plants a seed in better quality in future inventions submissions.”</b>
+			   <i> - Edge, Networking and Applications IP Group Portfolio Manager L.B., December 2021</i><br>
+   			   <span id="keywordField">Keywords: teamwork, collaboration, communication, self-management, leadership, interpersonal, computing, computer</span>
+		   </p>
+	   </li>
+
+	   <li class="recogText">
+		   <p>
+			   <b>“On behalf of Christy (Pambianchi) and HR, I’m thrilled to add my own thanks and appreciation for the impact you made throughout 2021 as a volunteer for Career Connections, Career Zone, assessment interpretation, and/or class facilitation. Volunteering to support Intel’s learning and career initiatives helps others grow their careers, advances our culture of bold innovation and flawless execution, enables employees to go beyond what they thought was possible and deliver more impact for their teams and Intel.”</b>
+			   <i> - Intel Human Resources Organization & Talent Capability HR Manager S.C., December 2021</i><br>
+   			   <span id="keywordField">Keywords: teamwork, collaboration, communication, leadership, organizational, interpersonal</span>
+		   </p>
+	   </li>
+
+	   <li class="recogText">
+		   <p>
+			   <b>“Hi Cagri, I wanted to thank you on behalf of the OCTO & SATG Division Operations team for all the information and learnings shared as we kicked off our plans to propose a GRA (Group Recognition Award) for the organisation. Thank you for all your support in developing our award’s first draft.”</b>
+			   <i> - Software and Advanced Technology Group Project/Program Manager P.T., December 2021</i><br>
+   			   <span id="keywordField">Keywords: teamwork, collaboration, communication, problem solving, leadership, interpersonal</span>
+		   </p>
+	   </li>
+
+	   <li class="recogText">
+		   <p>
+			   <b>“Thank you Cagri for mentoring me and helping me learn the art of writing impactful IDFs. Your support and help on this front is well-appreciated. I have attended several sessions on writing IDFs but your approach of taking me down the path, reviewing the drafts, providing actionable feedback and working on the iterations towards a well-written disclosure is commendable. Your effort is helpful as it enables a wider community to make contributions to Intel's IP portfolio.”</b>
+			   <i> - One of my patent mentees System Validation Engineer R.J., February 2022</i><br>
+   			   <span id="keywordField">Keywords: communication, problem solving, creativity, leadership, interpersonal</span>
+		   </p>
+	   </li>
+
+	   <li class="recogText">
+		   <p>
+			   <b>“THANK YOU for driving the Patent 101 workshops. Your sincere dedication to encourage the technical community at Intel is inspirational. Thanks to your work, you got me focused on patent filing in Q4'21. Since the workshop I have filed 4 IDFs and am working on one currently. Thank you for your motivation and very well organised workshops. It's been extremely helpful for me. Greatly appreciate your mentorship as technical leaders at Intel and your drive to grow others.”</b>
+			   <i> - One of my patent mentees Platform Architect B.Z., February 2022</i><br>
+   			   <span id="keywordField">Keywords: teamwork, collaboration, communication, problem solving, creativity, leadership, organizational, interpersonal, computing, computer</span>
+		   </p>
+	   </li>
+
+	   <li class="recogText">
+		   <p>
+			   <b>“Thank you, Cagri, for your leadership in Patent101. Your work in automating the collaboration environment using teams & then leading the brainstorming sessions are critical for Patent101 training. Your commitment to growing Intel's inventor pipeline is greatly appreciated!”</b>
+			   <i> - Patent 101 Workshops Founder E.P., March 2022</i><br>
+   			   <span id="keywordField">Keywords: communication, self-management, problem solving, creativity, leadership, organizational, interpersonal, computing, computer</span>
+		   </p>
+	   </li>
+
+	   <li class="recogText">
+		   <p>
+			   <b>“Thank you for the great work on the recognition task force and truly going above and beyond the call of duty and working over the weekend to deliver meaningful insight in record time. These insights will be very helpful for IL leadership to make informed decisions and help improve inclusion.”</b>
+			   <i> - Director of Intelligent Systems Lab (Intel Fellow) L.N., April 2022</i><br>
+   			   <span id="keywordField">Keywords: teamwork, collaboration, communication, self-management, problem solving, leadership, organizational, interpersonal, computing, computer</span>
+		   </p>
+	   </li>
+
+	   <li class="recogText">
+		   <p>
+			   <b>“Thank you, Cagri for providing your technical expertise to Patent101 as a Pitch to Panel consultant. Thank you for your leadership in coordinating a successful US Patent101 series where we had 17 ideas generated and seven presentations. Your coaching and commitment to growing the technical community are greatly appreciated!”</b>
+			   <i> - Patent 101 Workshops Founder E.P., April 2022</i><br>
+   			   <span id="keywordField">Keywords: teamwork, collaboration, communication, self-management, leadership, interpersonal, computing, computer</span>
+		   </p>
+	   </li>
+
+	   <li class="recogText">
+		   <p>
+			   <b>“Thank you for the time and effort spent supporting the Wi-Fi sensing demo to Omar Ishrak. It was amazing to see the flawless demo, and it would not have been possible without your help, support and testing. Rich (Uhlig) was deeply appreciative as well, so very proud of the huge improvements that were made over the last few weeks as we were putting together the system.”</b>
+			   <i> - My first line manager (Intel Principal Engineer) R.S., April 2022</i><br>
+   			   <span id="keywordField">Keywords: teamwork, collaboration, communication, leadership, interpersonal</span>
+		   </p>
+	   </li>
+
+	   <li class="recogText">
+		   <p>
+			   <b>“Thank you for your significant contribution in leading the set up of inventor badges for the Intel Patent Workshop community for recognizing their innovation mindset, mentors and consultants leadership, and coordinators' effort.”</b>
+			   <i> - Patent 101 Workshops Consultant/Mentor (Intel Principal Engineer) Y.P., April 2022</i><br>
+   			   <span id="keywordField">Keywords: teamwork, collaboration, problem solving, leadership, interpersonal</span>
+		   </p>
+	   </li>
+
+	   <li class="recogText">
+		   <p>
+			   <b>“On National High Five Day, I want to thank you for your active participation in Intel’s patent program in the last year as measured by your receiving our High Five Award. Only 2.5% of Intel employees ever file even a single patent and an even smaller number 0.44% file 5 or more within a 12-month period. Thank you so much for your innovative contributions to Intel.   Innovation is truly the lifeblood of our company, and you embody the innovative spirit. You are a great asset to Intel, and I hope you continue to innovate at a torrid pace.”</b>
+			   <i> - Vice President of Intel Patent Group J.D., April 2022</i><br>
+   			   <span id="keywordField">Keywords: self-management, problem solving, creativity, computing, computer</span>
+		   </p>
+	   </li>
+
+	   <li class="recogText">
+		   <p>
+			   <b>“Thank you Cagri for providing us with powerful IDF & Tech. writing tips. You had a direct impact on 117 participants and many are requesting for recorded videos. Thanks again for consistently coaching and supporting us.”</b>
+			   <i> - Network & Edge Solutions Group Innovation Lead S.C.T., May 2022</i><br>
+   			   <span id="keywordField">Keywords: communication, creativity, leadership, organizational, interpersonal</span>
+		   </p>
+	   </li>
+
+	   <li class="recogText">
+		   <p>
+			   <b>“Amazing job putting together the IL Demo Day submissions in a very short time, and with such high quality. Thank you for such a great effort!”</b>
+			   <i> - My first line manager (Intel Principal Engineer) R.S., May 2022</i><br>
+   			   <span id="keywordField">Keywords: teamwork, collaboration, communication, self-management, problem solving, organizational, computing, computer</span>
+		   </p>
+	   </li>
+
+	   <li class="recogText">
+		   <p>
+			   <b>“Thanks for the excellence collaboration between ICE and Patent101 team in running the Patent101 Workshop across org (IOTG - ICE, HSPE, etc), CSO, etc and across geo (Malaysia, US, India, PRC, Taiwan, etc). This Patent101 Workshop has generated 14 ideas, 8 ideas from the idea generation session and 4 additional ideas have been pitched with good feedback from the panellists. Your effort before and during the workshop was fantastic in getting mentors and panellists. Huge impact created! Thank You!”</b>
+			   <i> - Network & Edge Solutions Group Innovation Lead S.C.T., May 2022</i><br>
+   			   <span id="keywordField">Keywords: teamwork, collaboration, communication, leadership, organizational, interpersonal, computing, computer</span>
+		   </p>
+	   </li>
+
+	   <li class="recogText">
+		   <p>
+			   <b>“Thanks Cagri for taking time to attend the MPE/IVE Mentor Groups and present on Patent 101 and discuss the process. This was timely and informative to the team as these folks continue to grow their careers and innovate for Intel.”</b>
+			   <i> - Manufacturing & Product Engineering Group Innovation Lead K.F., June 2022</i><br>
+   			   <span id="keywordField">Keywords: teamwork, collaboration, communication, leadership, organizational, interpersonal</span>
+		   </p>
+	   </li>
+
+	   <li class="recogText">
+		   <p>
+			   <b>“Thanks for being the mentor of the Patents 101 workshops, and dedicating your expertise and time to help grow the inventor pipeline. Your involvement at the Patent 101 was highly appreciated.”</b>
+			   <i> - Intel Malaysia Platform SW Enabling Team Innovation Lead, C.C., June 2022</i><br>
+   			   <span id="keywordField">Keywords: teamwork, collaboration, communication, creativity, leadership, organizational, interpersonal, computing, computer</span>
+		   </p>
+	   </li>
+
+	   <li class="recogText">
+		   <p>
+			   <b>“I represent Asia Patent101 Workshop committees to thank you for your dedication of extra time to join the Agenda of the day as our honourable Panels List, contributing your valuable expertise feedback to workshop participants to allow them work better towards their ideas for IDF submission at a later time. It had been a great experience for everyone joining the Workshop to learn together. We cannot wait to see you again in the next session for the remaining Pitch-To-Panel.”</b>
+			   <i> - Intel Malaysia Platform SW Enabling Team Innovation Lead, C.M.Y., June 2022</i><br>
+   			   <span id="keywordField">Keywords: teamwork, collaboration, communication, leadership, organizational, interpersonal, computing, computer</span>
+		   </p>
+	   </li>
+
+	   <li class="recogText">
+		   <p>
+			   <b>“It was so important that you continue your commitment to support, and facilitate active discussion among team members in one of the 'idea' channels on today (Session3) Asia Patent101 Workshop and enable the channel team progressing smoothly to pitch-to-panel agenda as the next step. Thanks for supporting the patent community and you made a difference being as Inclusive as you could.”</b>
+			   <i> - Intel Malaysia Platform SW Enabling Team Innovation Lead, C.C., June 2022</i><br>
+   			   <span id="keywordField">Keywords: communication, leadership, interpersonal</span>
+		   </p>
+	   </li>
+
+	   <li class="recogText">
+		   <p>
+			   <b>“Once again, I represent the Asia Patent101 Workshop committees to thank you for your participation in the Workshop Pitch-To-Panel Agenda today. It was a successful session as a result. Seven more ideas had been presented today with good inputs from some of you to improve the ideas from different aspects that are important to the team to tackle further before filing them to patent. Thank you for helping Intel people at different geos to learn and grow together through this Workshop.”</b>
+			   <i> - Intel Malaysia Platform SW Enabling Team Innovation Lead, C.C., June 2022</i><br>
+   			   <span id="keywordField">Keywords: communication, leadership, interpersonal</span>
+		   </p>
+	   </li>
+
+	   <li class="recogText">
+		   <p>
+			   <b>“Thank you, Cagri, for your dedication to the successful launch of the Patent 101 sessions in Malaysia. Your expertise and commitment to training and presenting are deeply appreciated.”</b>
+			   <i> - Patent 101 Workshops Founder E.P., June 2022</i><br>
+   			   <span id="keywordField">Keywords: communication, leadership, interpersonal, computing, computer</span>
+		   </p>
+	   </li>
+
+	   <li class="recogText">
+		   <p>
+			   <b>“Thank you so much, Cagri, for driving the efforts to get the Patent 101 Workshop technical keywords into Aurora! Thank you so much for giving us the ability to track our work in growing the innovation community.”</b>
+			   <i> - Patent 101 Workshops Founder E.P., July 2022</i><br>
+   			   <span id="keywordField">Keywords: teamwork, collaboration, communication, problem solving, creativity, interpersonal, computing, computer</span>
+		   </p>
+	   </li>
+
+	   <li class="recogText">
+		   <p>
+			   <b>“Thank you for participating in our collaboration research project. We really appreciate your generosity with your time, your enthusiastic participation in the experiments, and your helpful comments and feedback on our prototype. Your support is a great example of the "One Intel" attitude.”</b>
+			   <i> - UX Team Manager in Intelligent Systems Lab J.S., July 2022</i><br>
+   			   <span id="keywordField">Keywords: teamwork, collaboration, communication, computing, computer</span>
+		   </p>
+	   </li>
+
+	   <li class="recogText">
+		   <p>
+			   <b>“Congratulations on your Divisional Recognition Award from ISR for going above and beyond the call of duty in the recognition task force , truly digging in and understanding the needs of the IL community and thoughtfully designing a solution that addresses these needs. It took tons of effort and energy but was absolutely needed and will make a big difference in improving our culture.”</b>
+			   <i> - Director of Intelligent Systems Lab (Intel Fellow) L.N., August 2022</i><br>
+   			   <span id="keywordField">Keywords: teamwork, collaboration, communication, self-management, creativity, leadership, organizational, interpersonal, computing, computer</span>
+		   </p>
+	   </li>
+
+	   <li class="recogText">
+		   <p>
+			   <b>“A small token to Cagri for the great IDF harvest session to ATI/ACE team. The session was a smashing success and the team's confidence level jumped up after the session. This is really a good start for us to build an innovation culture in the team and help people in their career development.”</b>
+			   <i> - Intel China Transportation Solutions Division Innovation Lead J.D., September 2022</i><br>
+   			   <span id="keywordField">Keywords: communication, leadership, interpersonal</span>
+		   </p>
+	   </li>
+
+	   <li class="recogText">
+		   <p>
+			   <b>“Cagri - Thank you for your energy, support, and guidance as our team focuses on patent generation around ground-breaking Computer Vision and Machine Learning IP. Perfect example of One Intel.”</b>
+			   <i> - Edge Neural Processing Team Innovation Lead, D.S., September 2022</i><br>
+   			   <span id="keywordField">Keywords: teamwork, collaboration, communication, leadership, organizational, interpersonal, computing, computer</span>
+		   </p>
+	   </li>
+
+	   <li class="recogText">
+		   <p>
+			   <b>“Thank you so much for helping us evaluate the User Experience for the Technical Network visualisation tool. Your insights have helped us work through some of our issues and discover new opportunities.”</b>
+			   <i> - UX Team Lead in Intelligent Systems Lab P.D., September 2022</i><br>
+   			   <span id="keywordField">Keywords: teamwork, collaboration, communication, computing, computer</span>
+		   </p>
+	   </li>
+
+	   <li class="recogText">
+		   <p>
+			   <b>“Dear Cagri, Thank you very much for your great support to IL Talks by delivering a high-quality talk on patent drafting! The IL global community has benefited from your sharing!”</b>
+			   <i> - Intel Labs Talks co-organizer H.Y., September 2022</i><br>
+   			   <span id="keywordField">Keywords: communication, self-management, leadership, interpersonal</span>
+		   </p>
+	   </li>
+
+	   <li class="recogText">
+		   <p>
+			   <b>“Thank you, Cagri, for launching and leading Patent101's brainstorming session for the final 2022 series. Your leadership and commitment to innovation are the reason we are growing the Inventor pipeline!”</b>
+			   <i> - Patent 101 Workshops Founder E.P., September 2022</i><br>
+   			   <span id="keywordField">Keywords: communication, problem solving, creativity, leadership, interpersonal</span>
+		   </p>
+	   </li>
+
+	   <li class="recogText">
+		   <p>
+			   <b>“Many thanks Cagri for contributing once again to Costa Rica's Road to Ideation and sharing with us "Good practices of writing effective IDFs". We will keep the recording of this training very close and will help us every time someone wants to fill an IDF. We really appreciate your support.”</b>
+			   <i> - Intel Costa Rica Ideation Conference Co-organizer G.T., October 2022</i><br>
+   			   <span id="keywordField">Keywords: communication, leadership, interpersonal</span>
+		   </p>
+	   </li>
+
+	   <li class="recogText">
+		   <p>
+			   <b>“Thank you, Cagri, for your leadership in mentoring and consulting in Patent101. Your expertise and dedication are critical to growing the innovation community.”</b>
+			   <i> - Patent 101 Workshops Founder E.P., October 2022</i><br>
+   			   <span id="keywordField">Keywords: teamwork, collaboration, communication, self-management, problem solving, creativity, leadership, interpersonal, computing, computer</span>
+		   </p>
+	   </li>
+
+	   <li class="recogText">
+		   <p>
+			   <b>“Thank you, Cagri for being a mentor and facilitator for the 2022 Virtual Patent101 series. Your leadership and commitment to growing the innovation pipeline are greatly appreciated.”</b>
+			   <i> - Patent 101 Workshops Founder E.P., October 2022</i><br>
+   			   <span id="keywordField">Keywords: teamwork, collaboration, communication, self-management, problem solving, creativity, leadership, interpersonal, computing, computer</span>
+		   </p>
+	   </li>
+
+	   <li class="recogText">
+		   <p>
+			   <b>“Thank you Cagri for your efforts in evaluating invention submissions of the Autonomous Platform Technologies committee this year. We also thank you for your help in the ASITE brainstorming workshop as the digital twins pillar lead. Your deep technical expertise and experience help Intel improve the overall quality of its patent portfolio. We really appreciate your insight and hope to have your continuing support in the future.”</b>
+			   <i> - Autonomous Platforms and Technologies IP Group Portfolio Manager I.M., November 2022</i><br>
+   			   <span id="keywordField">Keywords: teamwork, collaboration, communication, self-management, problem solving, creativity, leadership, organizational, interpersonal, computing, computer</span>
+		   </p>
+	   </li>
+
+	   <li class="recogText">
+		   <p>
+			   <b>“Thanks for collecting all the radar gesture data for WCS. You went above and beyond in the data collection, labelling, organising and documenting everything... demonstrating a commitment to One Intel, customer support and high quality.”</b>
+			   <i> - My first line manager (Intel Principal Engineer) R.S., January 2023</i><br>
+   			   <span id="keywordField">Keywords: collaboration, communication, self-management, organizational, interpersonal, computing, computer</span>
+		   </p>
+	   </li>
+
+    </ol>
+
+<script>
+function myFunction() {
+  // Declare variables
+  var input, filter, ol, li, p, i, txtValue;
+  input = document.getElementById('searchInput');
+  filter = input.value.toUpperCase();
+  ol = document.getElementById("myOL");
+  li = ol.getElementsByTagName('li');
+
+  // Loop through all list items, and hide those who don't match the search query
+  for (i = 0; i < li.length; i++) {
+    p = li[i].getElementsByTagName("p")[0];
+    txtValue = p.textContent || p.innerText;
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+      li[i].style.display = "";
+    } else {
+      li[i].style.display = "none";
+    }
+  }
+}
+</script>
+
+</body>
+
+</html>
